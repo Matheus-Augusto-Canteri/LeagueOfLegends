@@ -8,10 +8,9 @@
 }
 
 :root {
-    /* Armazena variavéis para reutilizar, pseudoclasse */
     --white: #FFF;
     --whitesmoke: #F9F9F9;
-    --ligth-grey: #ECECEC;
+    --light-grey: #ECECEC;
     --grey: #C4C4C4;
     --medium-grey: #A7A7A7;
     --deep-grey: #343434;
@@ -20,7 +19,7 @@
     --red: #CF3C3F;
 }
 
-.main{
+main {
     display: flex;
 }
 
@@ -33,7 +32,6 @@
     max-width: 500px;
     min-height: 100vh;
     padding: clamp(35px, 8%, 70px);
-    /* Função com parametros, valores respectivamente min, preferencia, max*/
 }
 
 .wrapper {
@@ -52,7 +50,7 @@
 .loginTitle {
     color: var(--deep-grey);
     font-size: 1.5em;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 
 .loginLabel {
@@ -63,7 +61,7 @@
 
 .input {
     width: 100%;
-    background-color: var(--ligth-grey);
+    background-color: var(--light-grey);
     border: 2px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
     outline: none;
@@ -78,20 +76,18 @@
     font-size: 0.8em;
     font-weight: 700;
     text-transform: uppercase;
-    /* Maiusculo */
     color: var(--medium-grey);
     margin: 20px;
     cursor: text;
     transition: all 200ms ease;
 }
 
-.input :focus {
-    /* Pseudoclasse */
+.input:focus {
     background-color: var(--whitesmoke);
     border: 2px solid var(--deep-grey);
 }
 
-.loginLabel .spanActive {
+.loginLabel .span-active {
     font-size: 0.7em;
     margin: 8px 10px;
 }
@@ -123,7 +119,7 @@
 }
 
 .loginIcons .iconsButton:nth-child(2) {
-    background-color: var(--ligth-grey);
+    background-color: var(--light-grey);
 }
 
 .loginIcons .iconsButton:nth-child(3) {
@@ -143,17 +139,16 @@
     appearance: none;
     width: 20px;
     height: 20px;
-    background-color: var(--ligth-grey);
+    background-color: var(--light-grey);
     margin-right: 8px;
     border-radius: 3px;
 }
 
-.inputCheckbox:checked{
+.inputCheckbox:checked {
     background-color: var(--red);
 }
 
 .inputCheckbox:checked::after {
-    /* Pseudoclasses*/
     content: "";
     display: block;
     width: 5px;
@@ -185,11 +180,11 @@
 .loginButton:disabled {
     cursor: auto;
     background-color: white;
-    border: 2px solid var(--ligth-grey);
+    border: 2px solid var(--light-grey);
 }
 
 .loginButton:disabled svg {
-    fill: var(--grey);
+    fill: var(--grey)
 }
 
 .loginLink {
@@ -203,7 +198,7 @@
 
 .wallpaper {
     width: 100%;
-    background-image: url('images/Yasuo.jpg');
+    background-image: url('');
     background-size: cover;
     background-position: center;
     flex: 1;
