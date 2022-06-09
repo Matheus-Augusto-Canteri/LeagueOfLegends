@@ -198,7 +198,7 @@ main {
 
 .wallpaper {
     width: 100%;
-    background-image: url('');
+    background-image: url('images/yasuoWallpaper.jpg');
     background-size: cover;
     background-position: center;
     flex: 1;
